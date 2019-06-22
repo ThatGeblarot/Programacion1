@@ -164,9 +164,7 @@ public class Monto {
 	public void calcularMonto()
 	{
 		String cadena = "";
-		int unidad=0, decena=0, centena=0, miles=0;
-		miles = digitos[MAXIMO-4];
-		centena = digitos[MAXIMO-3];
+		int unidad=0, decena=0;
 		decena = digitos[MAXIMO-2];
 		unidad = digitos[MAXIMO-1];
 

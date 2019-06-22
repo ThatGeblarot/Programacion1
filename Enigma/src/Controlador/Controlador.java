@@ -5,7 +5,9 @@ import Vista.Interfaz;
 
 public class Controlador {
 
+	@SuppressWarnings("unused")
 	private Mundo bd;
+	@SuppressWarnings("unused")
 	private Interfaz gui;
 	
 	public Controlador() 

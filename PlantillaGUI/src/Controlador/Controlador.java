@@ -18,18 +18,27 @@ public class Controlador implements ActionListener{
 
 		//aqui van los constructores tanto de Mundo, como de Vista
 		
-		bd = new Mundo();
+		setBd(new Mundo());
 		//se Modifica contructor de InterfazGUI para que reciba como parámetro la instancia de Controlador
 		gui = new InterfazGUI(this);
 		gui.setVisible(true); //hacer visible la ventana principal
 		
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public void actionPerformed(ActionEvent evento) {
 		// TODO Auto-generated method stub
 		if (evento.getActionCommand().equals(gui.getPanelEntrada().CONVERTIR)) {
 			gui.getPanelResultados().getTxtMonto().setText(gui.getPanelEntrada().getTxtNumero().getText()+" Procesado");
 		}
+	}
+
+	public Mundo getBd() {
+		return bd;
+	}
+
+	public void setBd(Mundo bd) {
+		this.bd = bd;
 	}
 }

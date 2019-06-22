@@ -25,6 +25,7 @@ public class Controlador implements ActionListener{
 		
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public void actionPerformed(ActionEvent evento) {
 		// TODO Auto-generated method stub

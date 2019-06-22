@@ -9,7 +9,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
 import java.util.Random;
 
 //Representa los datos de persistencia que van a ser utilizados por el mundo y/o controlador
@@ -29,7 +28,6 @@ public class Persistencia {
 	private DataInputStream dis;
 	private double numeros[];
 	private int valores[];
-	private Registro reg;
 	private Registro[] datos;
 	
 
@@ -61,7 +59,6 @@ public class Persistencia {
 		String mensaje="Archivo Generado Exitosamente!";
 		f=new File(ruta);
 		Random r=new Random(); 
-		double d=18.76353; 
 		try{     
 			fos=new FileOutputStream(f);     
 			dos=new DataOutputStream(fos);     

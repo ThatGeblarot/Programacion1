@@ -1,7 +1,6 @@
 package Modelo;
 
 import java.io.*;
-import java.util.Scanner;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -98,5 +97,10 @@ public class Mundo {
 		}
 		
 		return salida;
+	}
+
+
+	public static int getInformationMessage() {
+		return INFORMATION_MESSAGE;
 	}
 }

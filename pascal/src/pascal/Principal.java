@@ -11,5 +11,6 @@ public class Principal {
 		int terminos = leer.nextInt();
 		Triangulo pascal = new Triangulo();
 		pascal.generarTriangulo(terminos);
+		leer.close();
 	}
 }

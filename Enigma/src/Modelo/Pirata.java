@@ -9,9 +9,33 @@ public class Pirata {
 	private Properties codigohonor; 
 	
 	public Pirata() {
-		this.llave = "xxx";
-		this.palabra = "yes";
-		this.codigohonor = new Properties();
+		this.setLlave("xxx");
+		this.setPalabra("yes");
+		this.setCodigohonor(new Properties());
+	}
+
+	public String getLlave() {
+		return llave;
+	}
+
+	public void setLlave(String llave) {
+		this.llave = llave;
+	}
+
+	public String getPalabra() {
+		return palabra;
+	}
+
+	public void setPalabra(String palabra) {
+		this.palabra = palabra;
+	}
+
+	public Properties getCodigohonor() {
+		return codigohonor;
+	}
+
+	public void setCodigohonor(Properties codigohonor) {
+		this.codigohonor = codigohonor;
 	}
 }
 
